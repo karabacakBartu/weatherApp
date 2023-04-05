@@ -1,0 +1,99 @@
+<div class="ccon">
+  <a class="clock">{{clock}}</a>
+  </div>
+
+<div class="container">
+
+  
+  <div class="top-data">
+
+    <img src={{photoBg}} alt="" class="photo">
+   
+
+    <div class="date">{{date}}</div>
+
+
+
+<!-- weather -->
+    <div class="weather-data">
+
+      
+      <div class="select">
+        <select id="standard-select"  [(ngModel)]="city" (ngModelChange)="[selectedCity=city,onCitySelect(selectedCity)]">
+          <option [value]="city"  hidden="hidden">{{selectedCity}}</option>
+          <option [value]="city" *ngFor="let city of cities">{{city}}</option>
+      </select>
+      </div>
+
+    
+    
+        <div class="temprature"> {{temperature}}°C </div>
+
+      </div>
+  <!-- weather -->
+
+  </div>
+
+
+
+
+  <div class="right-data">
+
+    <div class="header">
+      More Information
+    </div>
+
+    
+    <div class="data">
+
+      <div class="data-field">
+        <div class="info">
+          <img src="../assets/max.jpg"  class="img">
+          <span class="category">max</span>
+        </div>
+        <div class="value">
+          {{maxTemp}}°C
+        </div>
+      </div>
+  
+  
+      <div class="data-field">
+        <div class="info">
+          <img src="../assets/min.jpg" class="img" >
+          <i class="category">min</i>
+        </div>
+        <div class="value">
+          {{minTemp}}°C
+        </div>
+      </div>
+        
+      <div class="data-field" >
+        <div class="info">
+          <img src="../assets/nem.webp" class="img" >
+          <i class="category">Nem(%)</i>
+        </div>
+        <div class="value">{{humidity}}</div>
+  
+      </div>
+      
+      <div class="data-field">
+        <div class="info">
+          <img src="../assets/ruzgar.png"  class="img">
+          <i class="category">Rüzgar Hızı(km)</i>
+        </div>
+        <div class="value">
+          {{windSpeed}} 
+        </div>
+      </div>
+
+    </div>
+
+ 
+      
+  </div>
+
+
+
+</div>
+
+<router-outlet></router-outlet>

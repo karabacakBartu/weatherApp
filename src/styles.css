@@ -1,0 +1,251 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("./assets/E1234Italic-DO3md.ttf");
+  }
+
+
+
+
+body {
+    text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+    font-family: 'Montserrat', 'sans-serif';
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .clock{
+
+    color: rgb(243, 243, 243);
+    float: left;
+    font-size: 1.8em;
+    position: sticky;
+    padding-top: 3px;
+    text-align: left;
+    text-shadow:  -1.8px 0 black, 0 1.8px black, 1.8px 0 black, 0 -1.3px black;
+    font-family: myFirstFont;
+    background: rgb(12, 11, 11);
+    border:rgb(0, 0, 0) solid 1px;
+    box-shadow: -1.8px 0 black, 0 1.8px black, 1.8px 0 black, 0 -1.3px black;
+
+    
+}
+
+.container {
+    width:1000px;
+    height: 100%;
+    background: linear-gradient(45deg, #337de6 0, #6a3834 100%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    box-shadow: 0px 10px 25px 0px rgb(0, 0, 0);
+}
+
+
+
+
+.top-data {
+
+
+    border-radius: 40px;
+    box-shadow: 0px 10px 25px 0px rgb(0, 0, 0);
+
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+
+    width: 85%;
+    height:350px ;
+
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+
+.photo{
+    position: absolute;
+    box-shadow: 0px 10px 25px 0px rgb(0, 0, 0);
+    border-radius: 40px;
+    width:849px;
+    height:350px;
+}
+
+
+
+ .location {
+    position: absolute;
+
+    color: rgb(255, 255, 254);
+    text-align: center;
+    font-size:2em;
+    font-variant: small-caps;
+} 
+
+ .temprature {
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size:3em;
+} 
+
+
+
+.weather-data {
+    margin-top: 150px;
+    margin-left:283px;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    float: left;
+    z-index: 1;
+
+} 
+
+
+
+.right-data {
+
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 80px;
+
+    width: 85%;
+    
+    background: linear-gradient(45deg, #8dadda 0, #ba7874 100%);
+
+    border-radius: 40px;
+    box-shadow: 0px 15px 27px 10px rgb(0, 0, 0);
+
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.header{
+    position: relative;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 254);
+    text-align: center;
+    font-size:2em;
+    font-variant: small-caps;
+}
+
+
+.data{
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.data-field {
+    float: left;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    width:50px;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.img {
+    width:50px;
+    margin-right:14px;
+    
+}
+
+
+.category{
+    font-size: 1em;
+    color: white;
+    margin-left: 7px;
+
+}
+
+.value {
+    font-size: 2em;
+    color: white;
+
+}
+
+
+select {
+    border-radius: 50%;
+    border-color: transparent;
+    border: none;
+    text-align: center;
+    font-size:2.9em;
+    font-variant: small-caps;
+    background-color: transparent;
+    width: 300px;
+}
+
+select:focus{
+    background-color: transparent;
+    border:0px;
+    border: none;
+}
+  
+select{
+    background-color: transparent;
+    text-shadow:  -1.3px 0 black, 0 1.3px black, 1.3px 0 black, 0 -1.3px black;
+    -webkit-appearance: button;
+    -webkit-border-radius: 25px;
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #fff8f8;
+    font-size: 38px;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+  
+select:focus{
+    opacity: 0.4;
+    order:none;
+    background-color: #ff7c77;
+}
+
+
+.ccon{
+    padding-left: 70px;
+    padding-top: 10px;
+}
+
+.days{
+    float: left;
+}
+
+
+/* clock css */
+
+
+
+
+
+
+
+
